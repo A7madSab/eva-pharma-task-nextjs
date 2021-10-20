@@ -1,0 +1,52 @@
+{
+  "name": "profile",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint \"src/**/*.tsx\" \"src/**/*.ts\" --fix",
+    "format": "prettier --write \"src/**/*.(ts|tsx|json)\"",
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format && npm run lint"
+    }
+  },
+  "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "^5.0.4",
+    "@mui/material": "latest",
+    "axios": "^0.23.0",
+    "clsx": "latest",
+    "formik": "^2.2.9",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@types/react": "17.0.24",
+    "@types/redux-logger": "^3.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "babel-loader": "^8.2.2",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-next": "11.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.2",
+    "prettier": "2.3.2",
+    "typescript": "4.4.3"
+  }
+}

@@ -1,0 +1,44 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": ["plugin:react/recommended", "airbnb", "prettier"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": ["react", "@typescript-eslint"],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["."]
+            }
+        }
+    },
+    "rules": {
+        "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+        "react/react-in-jsx-scope": "off",
+        "import/no-unresolved": "off",
+        "arrow-body-style": "off",
+        "no-nested-ternary": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "react/jsx-props-no-spreading": "off",
+        "no-lonely-if": "off",
+        "react/prop-types": "off",
+        "camelcase": "off",
+        "dot-notation": "off",
+        "react/forbid-prop-types": "off",
+        "import/prefer-default-export": "off",
+        "no-console": "off",
+        "no-useless-escape": "off",
+        "no-param-reassign": "off",
+        "import/no-extraneous-dependencies": "off",
+        "react/no-danger": "off",
+        "no-underscore-dangle": "off"
+    }
+}
